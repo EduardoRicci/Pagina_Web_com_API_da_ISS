@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreador da ISS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rastreador da Estação Espacial Internacional</h1>
+        <p>Verifique se a ISS está atualmente sobre sua localização.</p>
+        
+        <div class="input-section">
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" value="51.507351">
+            
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" value="-0.127758">
+        </div>
+        
+        <button id="checkButton">Verificar Posição da ISS</button>
+        <div id="issStatus"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

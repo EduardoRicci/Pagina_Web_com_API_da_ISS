@@ -15,7 +15,7 @@ async function checkIssPosition() {
         
         let statusMessage = `A ISS está atualmente na Latitude: ${issLatitude}, Longitude: ${issLongitude}.`;
 
-        // Check if the ISS is near the user's location
+        // Verifique se o ISS está próximo da localização do usuário
         if (MY_LAT - 5 <= issLatitude && issLatitude <= MY_LAT + 5 &&
             MY_LONG - 5 <= issLongitude && issLongitude <= MY_LONG + 5) {
             statusMessage += "<br>Olhe para cima! A ISS está sobre sua localização!";

@@ -6,7 +6,7 @@ async function checkIssPosition() {
     const MY_LONG = parseFloat(document.getElementById("longitude").value);
     
     try {
-        // Fetch ISS position
+        // Buscar posição ISS
         const response = await fetch("http://api.open-notify.org/iss-now.json");
         const data = await response.json();
         
